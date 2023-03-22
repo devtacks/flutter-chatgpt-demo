@@ -36,6 +36,9 @@ class _HomepageState extends State<Homepage> {
     - max_tokens means the maximum character we want to fetch  
         (if we pass max_tokens = 10, we will get a response having text of l0 character long)
 
+
+    Note: feel free to increase max_token , if you want more detailed text response. for now max_characters is 40.
+          max_tokens = (any number) - change in kconstant.dart file
     */
 
     var response =
@@ -48,7 +51,7 @@ class _HomepageState extends State<Homepage> {
             body: jsonEncode({
               "model": "text-davinci-003",
               "prompt": _controller.text,
-              "max_tokens": 100,
+              "max_tokens": maxTokens,
               "temperature": 0
             }));
 

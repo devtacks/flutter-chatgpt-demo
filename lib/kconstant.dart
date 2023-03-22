@@ -4,3 +4,4 @@ const userTitleName = "U";
 const botTitleName = "B";
 
 const apiKey = "";
+const maxTokens = 40;
